@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A20C5A9F2B174FCF00379E1A /* AgendaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5A9E2B174FCF00379E1A /* AgendaAppApp.swift */; };
-		A20C5AA12B174FCF00379E1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5AA02B174FCF00379E1A /* ContentView.swift */; };
+		A20C5A9F2B174FCF00379E1A /* AgendaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5A9E2B174FCF00379E1A /* AgendaApp.swift */; };
+		A20C5AA12B174FCF00379E1A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5AA02B174FCF00379E1A /* MainView.swift */; };
 		A20C5AA32B174FD000379E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20C5AA22B174FD000379E1A /* Assets.xcassets */; };
 		A20C5AA72B174FD000379E1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20C5AA62B174FD000379E1A /* Preview Assets.xcassets */; };
 		A20C5AB12B174FD100379E1A /* AgendaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5AB02B174FD100379E1A /* AgendaAppTests.swift */; };
 		A20C5ABB2B174FD100379E1A /* AgendaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5ABA2B174FD100379E1A /* AgendaAppUITests.swift */; };
 		A20C5ABD2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5ABC2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift */; };
+		A24560CB2B17600D001D82BD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CA2B17600D001D82BD /* FirebaseAuth */; };
+		A24560CD2B17600D001D82BD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CC2B17600D001D82BD /* FirebaseFirestore */; };
+		A24560CF2B17600D001D82BD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CE2B17600D001D82BD /* FirebaseFirestoreSwift */; };
+		A24560D12B1764BD001D82BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A24560D02B1764BD001D82BD /* GoogleService-Info.plist */; };
+		A24560D82B179EE0001D82BD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560D72B179EE0001D82BD /* ProfileView.swift */; };
+		A24560DA2B179F12001D82BD /* AgendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560D92B179F12001D82BD /* AgendaView.swift */; };
+		A24560DC2B179F32001D82BD /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560DB2B179F32001D82BD /* NewItemView.swift */; };
+		A24560DE2B179F4B001D82BD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560DD2B179F4B001D82BD /* LoginView.swift */; };
+		A24560E02B179F61001D82BD /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560DF2B179F61001D82BD /* RegisterView.swift */; };
+		A24560E22B179FB9001D82BD /* AgendaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560E12B179FB9001D82BD /* AgendaItemView.swift */; };
+		A24560E42B17A1F8001D82BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560E32B17A1F8001D82BD /* User.swift */; };
+		A24560E62B17A20A001D82BD /* AgendaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560E52B17A20A001D82BD /* AgendaItem.swift */; };
+		A24560E82B17A275001D82BD /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560E72B17A275001D82BD /* MainViewViewModel.swift */; };
+		A24560EA2B17A291001D82BD /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560E92B17A291001D82BD /* ProfileViewViewModel.swift */; };
+		A24560EC2B189337001D82BD /* AgendaViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560EB2B189337001D82BD /* AgendaViewViewModel.swift */; };
+		A24560EE2B18938A001D82BD /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560ED2B18938A001D82BD /* NewItemViewViewModel.swift */; };
+		A24560F02B1893A0001D82BD /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560EF2B1893A0001D82BD /* LoginViewViewModel.swift */; };
+		A24560F22B1893AD001D82BD /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F12B1893AD001D82BD /* RegisterViewViewModel.swift */; };
+		A24560F42B1893FB001D82BD /* AgendaItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */; };
+		A24560F62B189A9D001D82BD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F52B189A9D001D82BD /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +55,8 @@
 
 /* Begin PBXFileReference section */
 		A20C5A9B2B174FCF00379E1A /* AgendaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A20C5A9E2B174FCF00379E1A /* AgendaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppApp.swift; sourceTree = "<group>"; };
-		A20C5AA02B174FCF00379E1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20C5A9E2B174FCF00379E1A /* AgendaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaApp.swift; sourceTree = "<group>"; };
+		A20C5AA02B174FCF00379E1A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A20C5AA22B174FD000379E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20C5AA42B174FD000379E1A /* AgendaApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgendaApp.entitlements; sourceTree = "<group>"; };
 		A20C5AA62B174FD000379E1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +65,23 @@
 		A20C5AB62B174FD100379E1A /* AgendaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20C5ABA2B174FD100379E1A /* AgendaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppUITests.swift; sourceTree = "<group>"; };
 		A20C5ABC2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A24560D02B1764BD001D82BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A24560D72B179EE0001D82BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A24560D92B179F12001D82BD /* AgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
+		A24560DB2B179F32001D82BD /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		A24560DD2B179F4B001D82BD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A24560DF2B179F61001D82BD /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A24560E12B179FB9001D82BD /* AgendaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaItemView.swift; sourceTree = "<group>"; };
+		A24560E32B17A1F8001D82BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A24560E52B17A20A001D82BD /* AgendaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaItem.swift; sourceTree = "<group>"; };
+		A24560E72B17A275001D82BD /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		A24560E92B17A291001D82BD /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		A24560EB2B189337001D82BD /* AgendaViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewViewModel.swift; sourceTree = "<group>"; };
+		A24560ED2B18938A001D82BD /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
+		A24560EF2B1893A0001D82BD /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		A24560F12B1893AD001D82BD /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaItemViewViewModel.swift; sourceTree = "<group>"; };
+		A24560F52B189A9D001D82BD /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A24560CB2B17600D001D82BD /* FirebaseAuth in Frameworks */,
+				A24560CD2B17600D001D82BD /* FirebaseFirestore in Frameworks */,
+				A24560CF2B17600D001D82BD /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +135,12 @@
 		A20C5A9D2B174FCF00379E1A /* AgendaApp */ = {
 			isa = PBXGroup;
 			children = (
-				A20C5A9E2B174FCF00379E1A /* AgendaAppApp.swift */,
-				A20C5AA02B174FCF00379E1A /* ContentView.swift */,
-				A20C5AA22B174FD000379E1A /* Assets.xcassets */,
-				A20C5AA42B174FD000379E1A /* AgendaApp.entitlements */,
+				A24560D62B176828001D82BD /* Other */,
+				A24560D52B17681C001D82BD /* Models */,
+				A24560D42B17680F001D82BD /* ViewModels */,
+				A24560D32B176803001D82BD /* Views */,
 				A20C5AA52B174FD000379E1A /* Preview Content */,
+				A20C5AA42B174FD000379E1A /* AgendaApp.entitlements */,
 			);
 			path = AgendaApp;
 			sourceTree = "<group>";
@@ -129,6 +170,54 @@
 			path = AgendaAppUITests;
 			sourceTree = "<group>";
 		};
+		A24560D32B176803001D82BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20C5AA02B174FCF00379E1A /* MainView.swift */,
+				A24560D72B179EE0001D82BD /* ProfileView.swift */,
+				A24560D92B179F12001D82BD /* AgendaView.swift */,
+				A24560E12B179FB9001D82BD /* AgendaItemView.swift */,
+				A24560DB2B179F32001D82BD /* NewItemView.swift */,
+				A24560DD2B179F4B001D82BD /* LoginView.swift */,
+				A24560DF2B179F61001D82BD /* RegisterView.swift */,
+				A24560F52B189A9D001D82BD /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A24560D42B17680F001D82BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A24560E72B17A275001D82BD /* MainViewViewModel.swift */,
+				A24560E92B17A291001D82BD /* ProfileViewViewModel.swift */,
+				A24560EB2B189337001D82BD /* AgendaViewViewModel.swift */,
+				A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */,
+				A24560ED2B18938A001D82BD /* NewItemViewViewModel.swift */,
+				A24560EF2B1893A0001D82BD /* LoginViewViewModel.swift */,
+				A24560F12B1893AD001D82BD /* RegisterViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A24560D52B17681C001D82BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A24560E32B17A1F8001D82BD /* User.swift */,
+				A24560E52B17A20A001D82BD /* AgendaItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A24560D62B176828001D82BD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A24560D02B1764BD001D82BD /* GoogleService-Info.plist */,
+				A20C5AA22B174FD000379E1A /* Assets.xcassets */,
+				A20C5A9E2B174FCF00379E1A /* AgendaApp.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +234,11 @@
 			dependencies = (
 			);
 			name = AgendaApp;
+			packageProductDependencies = (
+				A24560CA2B17600D001D82BD /* FirebaseAuth */,
+				A24560CC2B17600D001D82BD /* FirebaseFirestore */,
+				A24560CE2B17600D001D82BD /* FirebaseFirestoreSwift */,
+			);
 			productName = AgendaApp;
 			productReference = A20C5A9B2B174FCF00379E1A /* AgendaApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +311,9 @@
 				Base,
 			);
 			mainGroup = A20C5A922B174FCF00379E1A;
+			packageReferences = (
+				A24560C92B17600D001D82BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A20C5A9C2B174FCF00379E1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +332,7 @@
 			files = (
 				A20C5AA72B174FD000379E1A /* Preview Assets.xcassets in Resources */,
 				A20C5AA32B174FD000379E1A /* Assets.xcassets in Resources */,
+				A24560D12B1764BD001D82BD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +357,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20C5AA12B174FCF00379E1A /* ContentView.swift in Sources */,
-				A20C5A9F2B174FCF00379E1A /* AgendaAppApp.swift in Sources */,
+				A24560DE2B179F4B001D82BD /* LoginView.swift in Sources */,
+				A24560F62B189A9D001D82BD /* HeaderView.swift in Sources */,
+				A24560E22B179FB9001D82BD /* AgendaItemView.swift in Sources */,
+				A24560F22B1893AD001D82BD /* RegisterViewViewModel.swift in Sources */,
+				A24560E82B17A275001D82BD /* MainViewViewModel.swift in Sources */,
+				A20C5AA12B174FCF00379E1A /* MainView.swift in Sources */,
+				A24560F42B1893FB001D82BD /* AgendaItemViewViewModel.swift in Sources */,
+				A24560DA2B179F12001D82BD /* AgendaView.swift in Sources */,
+				A24560EC2B189337001D82BD /* AgendaViewViewModel.swift in Sources */,
+				A24560EA2B17A291001D82BD /* ProfileViewViewModel.swift in Sources */,
+				A24560E62B17A20A001D82BD /* AgendaItem.swift in Sources */,
+				A24560E02B179F61001D82BD /* RegisterView.swift in Sources */,
+				A24560E42B17A1F8001D82BD /* User.swift in Sources */,
+				A24560F02B1893A0001D82BD /* LoginViewViewModel.swift in Sources */,
+				A24560D82B179EE0001D82BD /* ProfileView.swift in Sources */,
+				A20C5A9F2B174FCF00379E1A /* AgendaApp.swift in Sources */,
+				A24560DC2B179F32001D82BD /* NewItemView.swift in Sources */,
+				A24560EE2B18938A001D82BD /* NewItemViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +536,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AgendaApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Agenda;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -430,8 +545,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -458,6 +572,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AgendaApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Agenda;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -466,8 +581,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -609,6 +723,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A24560C92B17600D001D82BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A24560CA2B17600D001D82BD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A24560C92B17600D001D82BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A24560CC2B17600D001D82BD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A24560C92B17600D001D82BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A24560CE2B17600D001D82BD /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A24560C92B17600D001D82BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A20C5A932B174FCF00379E1A /* Project object */;
 }

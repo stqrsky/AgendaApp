@@ -9,14 +9,14 @@ import FirebaseCore
 import SwiftUI
 
 @main
-struct AgendaAppApp: App {
+struct AgendaApp: App {
     init() {
         FirebaseApp.configure()
     }
     
     var body: some Scene {
         WindowGroup {
-            Mainview()
+            MainView()
         }
     }
 }
