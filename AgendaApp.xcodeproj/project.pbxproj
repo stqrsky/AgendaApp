@@ -34,6 +34,7 @@
 		A24560F22B1893AD001D82BD /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F12B1893AD001D82BD /* RegisterViewViewModel.swift */; };
 		A24560F42B1893FB001D82BD /* AgendaItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */; };
 		A24560F62B189A9D001D82BD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F52B189A9D001D82BD /* HeaderView.swift */; };
+		A24560F82B18AA46001D82BD /* AgendaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24560F72B18AA46001D82BD /* AgendaButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		A24560F12B1893AD001D82BD /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaItemViewViewModel.swift; sourceTree = "<group>"; };
 		A24560F52B189A9D001D82BD /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A24560F72B18AA46001D82BD /* AgendaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				A24560DD2B179F4B001D82BD /* LoginView.swift */,
 				A24560DF2B179F61001D82BD /* RegisterView.swift */,
 				A24560F52B189A9D001D82BD /* HeaderView.swift */,
+				A24560F72B18AA46001D82BD /* AgendaButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				A24560EC2B189337001D82BD /* AgendaViewViewModel.swift in Sources */,
 				A24560EA2B17A291001D82BD /* ProfileViewViewModel.swift in Sources */,
 				A24560E62B17A20A001D82BD /* AgendaItem.swift in Sources */,
+				A24560F82B18AA46001D82BD /* AgendaButton.swift in Sources */,
 				A24560E02B179F61001D82BD /* RegisterView.swift in Sources */,
 				A24560E42B17A1F8001D82BD /* User.swift in Sources */,
 				A24560F02B1893A0001D82BD /* LoginViewViewModel.swift in Sources */,
