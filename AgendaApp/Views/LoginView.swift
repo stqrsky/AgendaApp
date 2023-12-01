@@ -20,7 +20,13 @@ struct LoginView: View {
                            background: .purple)
                 
                 // Login
+                
                 Form {
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
+                    
                     TextField("Email Address", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
@@ -30,7 +36,7 @@ struct LoginView: View {
                     
                     AgendaButton(title: "Log In",
                                  background: .blue) {
-                        // Attempt log in
+                        viewModel.login()
                     }
                 }
                 .offset(y: -50)
