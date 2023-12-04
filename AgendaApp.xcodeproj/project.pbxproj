@@ -14,6 +14,7 @@
 		A20C5AB12B174FD100379E1A /* AgendaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5AB02B174FD100379E1A /* AgendaAppTests.swift */; };
 		A20C5ABB2B174FD100379E1A /* AgendaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5ABA2B174FD100379E1A /* AgendaAppUITests.swift */; };
 		A20C5ABD2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5ABC2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift */; };
+		A2194B142B19F497009A1950 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2194B132B19F497009A1950 /* Extensions.swift */; };
 		A24560CB2B17600D001D82BD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CA2B17600D001D82BD /* FirebaseAuth */; };
 		A24560CD2B17600D001D82BD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CC2B17600D001D82BD /* FirebaseFirestore */; };
 		A24560CF2B17600D001D82BD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CE2B17600D001D82BD /* FirebaseFirestoreSwift */; };
@@ -66,6 +67,7 @@
 		A20C5AB62B174FD100379E1A /* AgendaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20C5ABA2B174FD100379E1A /* AgendaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppUITests.swift; sourceTree = "<group>"; };
 		A20C5ABC2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2194B132B19F497009A1950 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A24560D02B1764BD001D82BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A24560D72B179EE0001D82BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A24560D92B179F12001D82BD /* AgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
@@ -193,11 +195,11 @@
 			children = (
 				A24560E72B17A275001D82BD /* MainViewViewModel.swift */,
 				A24560E92B17A291001D82BD /* ProfileViewViewModel.swift */,
-				A24560EB2B189337001D82BD /* AgendaViewViewModel.swift */,
-				A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */,
 				A24560ED2B18938A001D82BD /* NewItemViewViewModel.swift */,
 				A24560EF2B1893A0001D82BD /* LoginViewViewModel.swift */,
 				A24560F12B1893AD001D82BD /* RegisterViewViewModel.swift */,
+				A24560EB2B189337001D82BD /* AgendaViewViewModel.swift */,
+				A24560F32B1893FB001D82BD /* AgendaItemViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -217,6 +219,7 @@
 				A24560D02B1764BD001D82BD /* GoogleService-Info.plist */,
 				A20C5AA22B174FD000379E1A /* Assets.xcassets */,
 				A20C5A9E2B174FCF00379E1A /* AgendaApp.swift */,
+				A2194B132B19F497009A1950 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				A24560E02B179F61001D82BD /* RegisterView.swift in Sources */,
 				A24560E42B17A1F8001D82BD /* User.swift in Sources */,
 				A24560F02B1893A0001D82BD /* LoginViewViewModel.swift in Sources */,
+				A2194B142B19F497009A1950 /* Extensions.swift in Sources */,
 				A24560D82B179EE0001D82BD /* ProfileView.swift in Sources */,
 				A20C5A9F2B174FCF00379E1A /* AgendaApp.swift in Sources */,
 				A24560DC2B179F32001D82BD /* NewItemView.swift in Sources */,

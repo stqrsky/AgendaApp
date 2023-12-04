@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+/// ViewModel for a single Agenda item view ( each row in the list)
+class AgendaItemViewViewModel: ObservableObject {
+    init() {}
+}

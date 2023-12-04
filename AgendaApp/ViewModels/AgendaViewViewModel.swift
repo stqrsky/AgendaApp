@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+/// ViewModel for list of items view
+///  Primary tab
+class AgendaViewViewModel: ObservableObject {
+    init() {}
+}
