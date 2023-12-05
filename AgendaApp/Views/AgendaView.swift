@@ -9,7 +9,7 @@ import FirebaseFirestoreSwift
 import SwiftUI
 
 struct AgendaView: View {
-    @StateObject var viewModel = AgendaViewViewModel()
+    @StateObject var viewModel: AgendaViewViewModel
     @FirestoreQuery var items: [AgendaItem]
     
     
@@ -17,6 +17,9 @@ struct AgendaView: View {
         //  usersd/<id>/todos/<entries>
         self._items = FirestoreQuery(
             collectionPath: "users/\(userId)/agendas"
+        )
+        self._viewModel = StateObject(
+            wrappedValue: AgendaViewViewModel(userId: userId)
         )
     }
     
@@ -29,7 +32,7 @@ struct AgendaView: View {
                             Button("Delete") {
                                 viewModel.delete(id: item.id)
                             }
-                            .background(Color.red)
+                            .tint(.red)
                         }
                 }
                 .listStyle(PlainListStyle())
