@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AgendaItemView: View {
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = AgendaItemViewViewModel()
     let item: AgendaItem
     
     var body: some View {
