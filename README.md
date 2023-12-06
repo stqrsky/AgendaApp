@@ -4,9 +4,6 @@
 For fun, educational purpose and repetitions...
 
 
-
-<p align="center">
-  <img src="https://jumpshare.com/s/22w31kaNROQNZRyaBt4E" width="150" height="300" alt="AgendaApp.gif" />
-</p>
+![](https://github.com/AgendaApp/tree/main/AgendaApp/Other/AgendaGif.gif)
 
 
