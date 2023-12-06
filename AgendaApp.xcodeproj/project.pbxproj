@@ -15,6 +15,7 @@
 		A20C5ABB2B174FD100379E1A /* AgendaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5ABA2B174FD100379E1A /* AgendaAppUITests.swift */; };
 		A20C5ABD2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C5ABC2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift */; };
 		A2194B142B19F497009A1950 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2194B132B19F497009A1950 /* Extensions.swift */; };
+		A2194B162B207DD3009A1950 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2194B152B207DD3009A1950 /* Launch Screen.storyboard */; };
 		A24560CB2B17600D001D82BD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CA2B17600D001D82BD /* FirebaseAuth */; };
 		A24560CD2B17600D001D82BD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CC2B17600D001D82BD /* FirebaseFirestore */; };
 		A24560CF2B17600D001D82BD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A24560CE2B17600D001D82BD /* FirebaseFirestoreSwift */; };
@@ -68,6 +69,7 @@
 		A20C5ABA2B174FD100379E1A /* AgendaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppUITests.swift; sourceTree = "<group>"; };
 		A20C5ABC2B174FD100379E1A /* AgendaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A2194B132B19F497009A1950 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A2194B152B207DD3009A1950 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A24560D02B1764BD001D82BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A24560D72B179EE0001D82BD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A24560D92B179F12001D82BD /* AgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				A20C5AA22B174FD000379E1A /* Assets.xcassets */,
 				A20C5A9E2B174FCF00379E1A /* AgendaApp.swift */,
 				A2194B132B19F497009A1950 /* Extensions.swift */,
+				A2194B152B207DD3009A1950 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				A20C5AA72B174FD000379E1A /* Preview Assets.xcassets in Resources */,
 				A20C5AA32B174FD000379E1A /* Assets.xcassets in Resources */,
+				A2194B162B207DD3009A1950 /* Launch Screen.storyboard in Resources */,
 				A24560D12B1764BD001D82BD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +479,11 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-no_warn_duplicate_libraries",
+				);
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -529,6 +538,8 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -551,6 +562,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -587,6 +599,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
